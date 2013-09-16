@@ -22,11 +22,11 @@ Partial Class FormAdd
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -34,6 +34,7 @@ Partial Class FormAdd
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'TextBox1
@@ -66,15 +67,6 @@ Partial Class FormAdd
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(103, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "ADD EMPLOYEE"
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -106,14 +98,14 @@ Partial Class FormAdd
         '
         Me.TextBox4.Location = New System.Drawing.Point(106, 152)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(172, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(245, 20)
         Me.TextBox4.TabIndex = 8
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(106, 178)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(172, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(245, 20)
         Me.TextBox5.TabIndex = 9
         '
         'Label5
@@ -134,11 +126,17 @@ Partial Class FormAdd
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ContactNo"
         '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        '
         'FormAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 290)
+        Me.ClientSize = New System.Drawing.Size(1056, 321)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox5)
@@ -146,7 +144,6 @@ Partial Class FormAdd
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -161,7 +158,6 @@ Partial Class FormAdd
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -169,4 +165,5 @@ Partial Class FormAdd
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
 End Class

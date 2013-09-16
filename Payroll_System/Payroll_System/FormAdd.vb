@@ -1,37 +1,25 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports MySql.Data
 Public Class FormAdd
-    Dim Conn As MySqlConnection
     Dim addcmd As New MySqlCommand
-    Dim AddQuery As String
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        AddQuery = "INSERT INTO `payroll_system`.`emp_profile` (`emp_ID`, `emp_FirstN`, `emp_MiddleN`, `emp_LastN`, `emp_Address`, `emp_ContactNo`) VALUES (NULL, '" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "')"
-        Conn = New MySqlConnection()
-        ' Define the SQL to grab data from table.
-        'Connection String
-        Dim name As String = "payroll_system"
-        Dim server As String = "localhost"
-        Dim user As String = "root"
-        Dim pwd As String = ""
-        Conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=true", server, user, pwd, name)
-
+        SqlQuery = "INSERT INTO `payroll_system`.`employee` (`emp_ID`, `firstname`, `middlename`, `lastname`, `address1`, `cellphone`) VALUES (NULL, '" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "')"
         Try
-            Conn.Open()
-            addcmd.Connection = Conn
-            addcmd.CommandText = AddQuery
+            MysqlConn.Open()
+            addcmd.Connection = MysqlConn
+            addcmd.CommandText = SqlQuery
             addcmd.ExecuteNonQuery()
-
+            MysqlConn.Close()
         Catch ex As Exception
             MsgBox("Error in saving to Database. Error is :" & ex.Message)
+
         End Try
-        MsgBox("New employee was added")
-        TextBox1.Clear()
-        TextBox2.Clear()
-        TextBox3.Clear()
-        TextBox4.Clear()
-        TextBox5.Clear()
+            MsgBox("New employee was added")
+            TextBox1.Clear()
+            TextBox2.Clear()
+            TextBox3.Clear()
+            TextBox4.Clear()
+            TextBox5.Clear()
 
 
     End Sub
