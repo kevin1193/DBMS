@@ -62,7 +62,7 @@ Public Class FormView
     End Sub
 
     Private Sub SettingsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem1.Click
-
+        NewUser.Show()
     End Sub
 
     Private Sub EmployeeToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmployeeToolStripMenuItem1.Click

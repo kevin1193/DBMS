@@ -26,3 +26,6 @@ C:\Users\Patras\Downloads\Desktop\Payroll_System\Payroll_System\obj\Debug\Payrol
 C:\Users\Patras\Downloads\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.vbproj.GenerateResource.Cache
 C:\Users\Patras\Downloads\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.LoginForm1.resources
 C:\Users\Patras\Downloads\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.Form3.resources
+C:\Users\Patras\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.Form3.resources
+C:\Users\Patras\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.LoginForm1.resources
+C:\Users\Patras\Desktop\Payroll_System\Payroll_System\obj\Debug\Payroll_System.NewUser.resources
