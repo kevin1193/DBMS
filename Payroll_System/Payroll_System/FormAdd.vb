@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports MySql.Data
 Public Class FormAdd
+
     Dim addcmd As New MySqlCommand
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         SqlQuery = "INSERT INTO `payroll_system`.`employee` (`emp_ID`, `firstname`, `middlename`, `lastname`, `address1`, `cellphone`) VALUES (NULL, '" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "')"
@@ -14,12 +15,12 @@ Public Class FormAdd
             MsgBox("Error in saving to Database. Error is :" & ex.Message)
 
         End Try
-            MsgBox("New employee was added")
-            TextBox1.Clear()
-            TextBox2.Clear()
-            TextBox3.Clear()
-            TextBox4.Clear()
-            TextBox5.Clear()
+        MsgBox("New employee was added")
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
 
 
     End Sub

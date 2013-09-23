@@ -21,12 +21,15 @@ Public Class NewUser
             username.Text = " "
             password1.Text = " "
             password2.Text = " "
+            MysqlConn.Close()
         Else
             Try
                 Dim addcmd As New MySqlCommand
                 SqlQuery = "INSERT INTO `user`(`user_ID`, `username`, `password`) VALUES (NULL, '" + username.Text + "', '" + password1.Text + "')"
+                MysqlConn.Close()
                 If (password1.Text = password2.Text) Then 'confirm password
                     Try
+                        MysqlConn.Open()
                         addcmd.Connection = MysqlConn
                         addcmd.CommandText = SqlQuery
                         addcmd.ExecuteNonQuery()
@@ -48,5 +51,9 @@ Public Class NewUser
             Catch
             End Try
         End If
+    End Sub
+
+    Private Sub NewUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -27,8 +27,10 @@ Public Class LoginForm1
         ctr += 1
 
         If dr.HasRows Then
+            MysqlConn.Close()
             Me.Hide()
             FormView.Show()
+
 
         ElseIf Not dr.HasRows And ctr = 1 Then
             MsgBox("Wrong Username or password.", MsgBoxStyle.Information)
@@ -50,6 +52,7 @@ Public Class LoginForm1
 
         If ctr = 3 Then
             Me.Close()
+            MysqlConn.Close()
         End If
 
     End Sub
@@ -57,6 +60,7 @@ Public Class LoginForm1
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
         Me.Close()
+        MysqlConn.Close()
     End Sub
 
     Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -96,9 +96,10 @@ Partial Class FormView
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Emp_ID, Me.FirstN, Me.MiddleN, Me.LastN, Me.Address, Me.Contact})
         Me.ListView1.GridLines = True
+        Me.ListView1.LabelEdit = True
         Me.ListView1.Location = New System.Drawing.Point(6, 235)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(318, 282)
+        Me.ListView1.Size = New System.Drawing.Size(355, 263)
         Me.ListView1.TabIndex = 6
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -106,22 +107,22 @@ Partial Class FormView
         'Emp_ID
         '
         Me.Emp_ID.Text = "ID"
-        Me.Emp_ID.Width = 47
+        Me.Emp_ID.Width = 40
         '
         'FirstN
         '
         Me.FirstN.Text = "First Name"
-        Me.FirstN.Width = 120
+        Me.FirstN.Width = 100
         '
         'MiddleN
         '
         Me.MiddleN.Text = "Middle Name"
-        Me.MiddleN.Width = 120
+        Me.MiddleN.Width = 100
         '
         'LastN
         '
         Me.LastN.Text = "Last Name"
-        Me.LastN.Width = 120
+        Me.LastN.Width = 110
         '
         'Address
         '
@@ -143,7 +144,7 @@ Partial Class FormView
         Me.TabControl1.Location = New System.Drawing.Point(0, 26)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(339, 526)
+        Me.TabControl1.Size = New System.Drawing.Size(375, 526)
         Me.TabControl1.TabIndex = 7
         '
         'TabPage1
@@ -158,13 +159,13 @@ Partial Class FormView
         Me.TabPage1.Location = New System.Drawing.Point(4, 28)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(331, 494)
+        Me.TabPage1.Size = New System.Drawing.Size(367, 494)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Home"
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(47, 0)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(70, 0)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 9
         '
@@ -202,9 +203,9 @@ Partial Class FormView
         '
         Me.ListView2.AllowDrop = True
         Me.ListView2.ForeColor = System.Drawing.SystemColors.Window
-        Me.ListView2.Location = New System.Drawing.Point(345, 32)
+        Me.ListView2.Location = New System.Drawing.Point(381, 32)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(668, 520)
+        Me.ListView2.Size = New System.Drawing.Size(632, 520)
         Me.ListView2.TabIndex = 8
         Me.ListView2.UseCompatibleStateImageBehavior = False
         '
@@ -262,7 +263,7 @@ Partial Class FormView
         'ITToolStripMenuItem
         '
         Me.ITToolStripMenuItem.Name = "ITToolStripMenuItem"
-        Me.ITToolStripMenuItem.Size = New System.Drawing.Size(87, 22)
+        Me.ITToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ITToolStripMenuItem.Text = "IT"
         '
         'HelpToolStripMenuItem
