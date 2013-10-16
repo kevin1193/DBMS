@@ -52,7 +52,6 @@ Public Class LoginForm1
 
         If ctr = 3 Then
             Me.Close()
-            MysqlConn.Close()
         End If
 
     End Sub
